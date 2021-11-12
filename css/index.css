@@ -1,0 +1,56 @@
+
+
+/* Login */
+
+#containerLog {
+    width:max-content;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#containerLog a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#formLogin label {
+    margin-right: 10px;
+}
+
+#username{
+    margin-right: 50px;
+}
+
+#formLogin input {
+    height: 24px;
+    border-radius: 20px;
+}
+
+#loginBtn {
+    cursor: pointer;
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+/* Register */
+
+#wrapper__register {
+    padding: 30px 0px;
+
+    border: solid 1.5px;
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+#wrapper__register h3 {
+    font-size: 34px;
+    margin-bottom: 90px;
+}
+

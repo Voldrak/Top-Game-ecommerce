@@ -1,0 +1,163 @@
+* {
+  background: black;
+  color: blanchedalmond;    
+}
+
+body {
+  margin: 0;
+  font-family: "Mohave", sans-serif;
+} 
+
+/* Head */
+.head {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head h2 {
+  font-size: 250%;
+  margin-left: 10px;
+}
+
+.gif {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border: none;
+}
+
+/* parte e-commerce*/
+
+img.icona {
+  width: 90px;
+}
+
+img.icona:hover {
+  transform:rotateZ(360deg);
+  transition: all 0.75s
+}
+
+img.cartImg{
+  width: 30px;
+  height: 30px;
+}
+
+button.cartBtn {
+  position: fixed bottom;
+  justify-content: center;
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper__titles {
+  text-align: center;
+  justify-content: center;
+}
+
+.wrapper__titles h1 {
+  font-size: 50px;
+  color: rgba(231, 34, 8, 0.863);
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.wrapper__titles h3 {
+  font-size: 22px;
+}
+
+.wrapper__products {
+  margin: 0 80px;
+  padding: 100px 50px ;
+  height: 50vh;
+  display: flex;
+  overflow-y: auto;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 7.5px;
+  padding: 10px;
+
+  min-width: 150px;
+
+  border: 2px solid rgb(50, 50, 50);
+  border-radius: 12px;
+
+  opacity: 0.78;
+  transition: all 0.35s;
+}
+
+.product:hover {
+  
+  border: 2px solid;
+  opacity: 1.5;
+  z-index: 1;
+  transform: scale(1.4);
+}
+
+.product:hover > h3 {
+  margin-top: 60px;
+  transition: 0.35s;
+}
+
+
+/* .product.priceP{
+} */
+
+.product:hover > .priceP {
+  margin-top: 80px;
+  transition: 0.35s;
+
+}
+
+.product:hover > .descTxt {
+  margin-top: 50px;
+}
+
+.descTxt {
+  min-height: 110px;
+  max-height: 110;
+}
+
+/* .product:active {
+  transform: scale(1.6);
+} */
+
+.productAct{
+  animation-name: slide-bottom;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  
+}
+
+@keyframes slide-bottom {
+  25% {
+    transform: scale(0.8);
+
+  }
+  60% {
+    transform: rotateX(180deg) scale(0.8);
+    
+  }
+
+  100% {
+    transform:translateY(600px) scale(0.05);
+  }
+} 
+
