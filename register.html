@@ -27,18 +27,29 @@
             <div id="wrapper__register">
                 <h3>Registrazione</h3>
                 <div class="moduleReg">
-                    <label for="username"> Username:* </label>
-                    <input type="text" name="username" id="userReg" required> <br>
-                    <label for="password"> Username:* </label>
-                    <input type="password" name="password" id="passReg" required><br>
-                    <label for="confPassword"> Conferma password:* </label>
-                    <input type="password" name="password" id="confPassReg" required><br>
-                    <label for="email">E-mail:*</label>
-                    <input type="email" name="email" id="emailReg" required><br>
-                    <input type="checkbox" value="Accetto" required>* Dichiaro di aver letto l'<a target="_blank" href="#">informativa sulla privacy</a> ai sensi del GDPR e do il consenso al trattamento dei dati personali.
+                    <div class="labelReg">
+                        <label for="username"> Username:* </label><br>
+                        <label for="password"> Password:* </label><br>
+                        <label for="confPassword"> Conferma password:* </label><br>
+                        <label for="email">E-mail:*</label><br>
+                    </div>
+                    <div class="inputReg">
+                        <input type="text" name="username" id="userReg" minlength="3" placeholder="Inserisci il tuo username" required> <br>
+                        <input type="password" name="password" id="passReg" minlength="6" maxlength="16" placeholder="Inserisci la tua password" required><br>
+                        <input type="password" name="password" id="confPassReg" minlength="6" maxlength="16" placeholder="Ripeti la tua password" required><br>
+                        <input type="email" name="email" id="emailReg" placeholder="Inserisci la tua email" required><br>
+                    </div>
+                </div>    
+                    <div class="checkReg">
+                        <input type="checkbox" value="Accetto" id="checkReg" required/>* Dichiaro di aver letto l'<a target="_blank" href="#">informativa sulla privacy</a> ai sensi del GDPR e do il consenso al trattamento dei dati personali.
+                    </div>  
+                <div id="btnRegReg">
+                    <button class="btnRegister" type="reset">Cancella</button>
+                    <button class="btnRegister" id="btnRegSub" type="submit">Registrati</button>
                 </div>
             </div>
         </form>
     </div>
 </body>
+<script src="js/index.js"></script>
 </html>

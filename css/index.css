@@ -40,17 +40,63 @@
 
 /* Register */
 
+#formRegister {
+    width: 100%;
+}
+
 #wrapper__register {
-    padding: 30px 0px;
+    margin-left: 20%;
+    margin-right: 20%;
+
+    padding: 30px 100px 70px;
 
     border: solid 1.5px;
     border-radius: 20px;
-    width: 50%;
-    text-align: center;
 }
 
 #wrapper__register h3 {
     font-size: 34px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
+    
+    text-align: center;
 }
 
+.moduleReg {
+    line-height: 4;
+    font-size: 22px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+.checkReg {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.checkReg input {
+    cursor: pointer;
+}
+
+.inputReg input {
+    height: 30px;
+    border-radius: 8px;
+}
+
+#btnRegReg {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 45px;
+}
+
+.btnRegister {
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+}

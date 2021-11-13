@@ -25,9 +25,11 @@ const render = (container, items) => {
 const list = document.querySelector(".wrapper__products")
 render(list, products);
 
-const cartBtn = document.querySelector(".cartBtn");
+const productsElements = document.querySelectorAll(".product");
 
-cartBtn.addEventListener('click', () => {
-  document.getElementsByClassName("product").classname += " productAct";
-  console.log(cartBtn, 'ciao');
- });
+
+productsElements.forEach((el) =>
+  el.addEventListener("click", () => {
+    el.classList.add("productAct");
+  })
+);
