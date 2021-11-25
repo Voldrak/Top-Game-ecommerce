@@ -1,4 +1,5 @@
 import {products} from "./products.js"; 
+import {openNav, btnMenu} from "./menu.js";
 
 const render = (container, items) => {
   const elements = items.map((element) => 
@@ -20,16 +21,62 @@ const render = (container, items) => {
 
 }
 
+const input = document.querySelector('#cercaC input');
 
 
 const list = document.querySelector(".wrapper__products")
 render(list, products);
 
+const localStorageTot = localStorage.getItem("totCartitems");
+const cartProductsNum = document.querySelector(".cartProductsNum")
 const productsElements = document.querySelectorAll(".product");
+// const divProdotti = document.querySelector(".wrapper__products")
+
+let carrello = [];
+
+
+// cartProductsNum.textContent = `prezzo prodotti: ${localStorageTot}`
+
+// cerca gioco
+input.addEventListener('keyup', (event) => {
+  const value = input.value.toLowerCase();
+
+  const results = products.filter((element) => 
+  element.title.toLowerCase().search(value) > -1
+);
+render(list, results)
+
+productsElements.forEach((el) =>
+  el.addEventListener("click", () => {
+    el.classList.toggle("productAct");
+    
+      carrello.push(el);
+      
+    localStorage.setItem("totCartitems", carrello.length);
+    console.log(carrello);
+
+    setTimeout(() => {
+    el.remove();
+    },3000);
+     })
+);
+
+
+});
 
 
 productsElements.forEach((el) =>
   el.addEventListener("click", () => {
-    el.classList.add("productAct");
-  })
+    el.classList.toggle("productAct");
+    
+      carrello.push(el);
+      
+    localStorage.setItem("totCartitems", carrello.length);
+    console.log(carrello);
+
+    setTimeout(() => {
+    el.remove();
+    },3000);
+     })
 );
+

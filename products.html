@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esercizio 11/11/2021</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <div class="head">
     <iframe src="https://giphy.com/embed/PQlTBMGU2HXwc" alt="gif" class="gif"></iframe>
     <h2>Coding Bootcamp - Edgemony 2021/2022 <br>
-    Marco Messina</h2>
+        Marco Messina</h2>
 </div>
+<div class="btnMenu"></div>
+<div class="openNav">
+
+    <div class="nav nav1">
+        <div class="iconaHome">
+        </div>
+        <div class="linkHome">
+            <a href="index.html">HomePage</a>
+        </div>
+    </div>
+    <div class="nav nav2">
+        <div class="iconaShop">
+
+        </div>
+        <div class="linkShop">
+            <a href="products.html">Shop</a>
+        </div>
+    </div>
+    <div class="nav nav3">
+        <div class="iconaRegister"></div>
+        <div class="linkRegister"> <a href="register.html">Register</a> </div>
+    </div>
+    <div class="nav nav4">
+        <div class="iconaNews"></div>
+        <div class="linkNews"> <a href="#">News</a> </div>
+    </div>
+</div>
+
+
 <body>
     <div class="wrapper">
         <div class="wrapper__titles">
             <h1> Top-Games Shop</h3>
-            <h3>Benvenuto al Top-Games shop, accomodati e scegli con tranquillità il gioco che fa per te.</h3>
+                <h3>Benvenuto al Top-Games shop, accomodati e scegli con tranquillità il gioco che fa per te.</h3>
         </div>
+
+        
+        <form id="cercaC">
+            <label for="search">Cerca il gioco:</label>
+            <input type="text" name="search" id="search"
+              placeholder="es: Minecraft" autocomplete="off" />
+          </form>
+
+          <div class="cartProductsNum"> Carrello:</div>
+       
         <div class="wrapper__products">
-           
+
         </div>
 
     </div>
+
     <script type="module" src="js/script.js"></script>
 </body>
+
 </html>

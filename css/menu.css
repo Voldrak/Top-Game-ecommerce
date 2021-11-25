@@ -1,0 +1,101 @@
+/* Menù */
+
+.openNav.menuTog {
+    
+    z-index: 5;
+    position: fixed;
+    height: 100%;
+    width: 400px;
+    top: 150px;
+    left: 0px;
+    padding-top:50px ;
+    background: rgba(0, 0, 0, 0.97);
+    box-shadow:  0px 0px 0px 10000px rgba(0, 0, 0, 0.95);
+    transition: all 0.7s;
+  }
+  
+  .openNav {
+    top: 200px;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    left: -300px;
+    transition: all 0.9s;
+  }
+  
+  .openNav a {
+    color: brown;
+    text-decoration: none;
+  }
+  
+  .btnMenu {
+    background-image: url(../img/icon/icons8-menu-96.png);
+    width: 96px;
+    height: 96px;
+    left: 18px;
+    top: 160px;
+    position: fixed;
+    z-index: 10;
+    transform: scale(0.8);
+    transition: all 0.7s;
+  }
+  
+  .btnMenuClose {
+    background-image: url(../img/icon/icons8-delete-40.png);
+    width: 40px;
+    height: 40px;
+    left: 300px;
+    top: 160px;
+    position: fixed;
+    z-index: 10;
+    transform: rotate(90deg)  ;
+    transition: all 0.7s;
+  }
+
+.nav {
+  display: grid;
+  flex-wrap: wrap;
+  margin: 50px 0px;
+  justify-content: center;
+  line-height: 50px;
+  height: 50px;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 100px;
+  grid-auto-flow: row;
+  grid-template-areas:"iconaHome linkHome";
+
+  transition: all 0.35s;
+}
+
+
+
+  .nav:hover {
+    background: rgb(214, 119, 119);
+    
+  }
+
+
+.iconaHome {
+  background-image: url(../img/icon/home.png);
+  background-repeat: no-repeat;
+   grid-area: iconaHome; 
+}
+
+.iconaShop {
+  background-image: url(../img/icon/icons8-fast-cart-50.png);
+  background-repeat: no-repeat;
+   grid-area: iconaHome; 
+}
+
+.iconaRegister {
+  background-image: url(../img/icon/icons8-id-verificato-60.png);
+  background-repeat: no-repeat;
+   grid-area: iconaHome; 
+}
+
+.iconaNews {
+  background-image: url(../img/icon/icons8-newspaper-50.png);
+  background-repeat: no-repeat;
+   grid-area: iconaHome; 
+}

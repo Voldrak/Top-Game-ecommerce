@@ -8,6 +8,7 @@
     <title>Esercizio 11/11/2021</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <div class="head">
@@ -23,6 +24,35 @@
             <h1> Top-Games Shop</h1>
         </div>
 
+        <div class="btnMenu"></div>
+        <div class="openNav">
+
+            <div class="nav nav1">
+                <div class="iconaHome">
+                </div>
+                <div class="linkHome">
+                    <a href="index.html">HomePage</a>
+                </div>
+            </div>
+            <div class="nav nav2">
+                <div class="iconaShop">
+
+                </div>
+                <div class="linkShop">
+                    <a href="products.html">Shop</a>
+                </div>
+            </div>
+            <div class="nav nav3">
+                <div class="iconaRegister"></div>
+                <div class="linkRegister"> <a href="register.html">Register</a> </div>
+            </div>
+            <div class="nav nav4">
+                <div class="iconaNews"></div>
+                <div class="linkNews"> <a href="#">News</a> </div>
+            </div>
+        </div>
+
+
         <form id="formRegister">
             <div id="wrapper__register">
                 <h3>Registrazione</h3>
@@ -34,15 +64,21 @@
                         <label for="email">E-mail:*</label><br>
                     </div>
                     <div class="inputReg">
-                        <input type="text" name="username" id="userReg" minlength="3" placeholder="Inserisci il tuo username" required> <br>
-                        <input type="password" name="password" id="passReg" minlength="6" maxlength="16" placeholder="Inserisci la tua password" required><br>
-                        <input type="password" name="password" id="confPassReg" minlength="6" maxlength="16" placeholder="Ripeti la tua password" required><br>
-                        <input type="email" name="email" id="emailReg" placeholder="Inserisci la tua email" required><br>
+                        <input type="text" name="username" id="userReg" minlength="3"
+                            placeholder="Inserisci il tuo username" required> <br>
+                        <input type="password" name="password" id="passReg" minlength="6" maxlength="16"
+                            placeholder="Inserisci la tua password" required><br>
+                        <input type="password" name="password" id="confPassReg" minlength="6" maxlength="16"
+                            placeholder="Ripeti la tua password" required><br>
+                        <input type="email" name="email" id="emailReg" placeholder="Inserisci la tua email"
+                            required><br>
                     </div>
-                </div>    
-                    <div class="checkReg">
-                        <input type="checkbox" value="Accetto" id="checkReg" required/>* Dichiaro di aver letto l'<a target="_blank" href="#">informativa sulla privacy</a> ai sensi del GDPR e do il consenso al trattamento dei dati personali.
-                    </div>  
+                </div> <br> <br>
+                <div class="checkReg">
+                    <p><input type="checkbox" id="checkRegi" required />* Dichiaro di aver letto l'<a target="_blank"
+                        href="#">informativa sulla privacy</a> ai sensi del GDPR e do il consenso al trattamento dei
+                    dati personali.</p>
+                </div>
                 <div id="btnRegReg">
                     <button class="btnRegister" type="reset">Cancella</button>
                     <button class="btnRegister" id="btnRegSub" type="submit">Registrati</button>
@@ -51,5 +87,6 @@
         </form>
     </div>
 </body>
-<script src="js/index.js"></script>
+<script type="module" src="js/register.js"></script>
+
 </html>
